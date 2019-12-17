@@ -78,13 +78,24 @@ div#fox{
 }
 /* Animation Styles */
 @keyframes playSprite{
-   100% {background: right center }
+   100% {background: right center}
 }
 @keyframes flyRight{
-   25%{}
-   50%{}
-   65%{}
-   90%{}
-   100%{}
+   25%{top:150px;}
+   50%{top:55px;}
+   65%{top:120px;}
+   90%{top:50px;}
+   100%{top:80px; left:100%}
 }
-
+div.playSprite {
+   animation-timing-function:infinite steps(27);
+   animation-duration:3.5s;
+   animation-delay:4s;
+}
+div#fox.playSprite{
+   animation-delay: 2s;
+   animation-timing-function:linear steps(39);
+}
+div#butterfly.playSprite{
+   
+}
